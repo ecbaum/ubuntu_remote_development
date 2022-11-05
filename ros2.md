@@ -19,6 +19,6 @@ get repository
     
 install ros2
 
-  sudo apt update
-  sudo apt upgrade
-  sudo apt install ros-humble-desktop
+      sudo apt update
+      sudo apt upgrade
+      sudo apt install ros-humble-desktop
