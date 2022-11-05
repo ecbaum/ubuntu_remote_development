@@ -36,9 +36,13 @@ then
     
 set `HandleLidSwitch=ignore`
 
-    sudo systemctl restart systemd-logind
-    
     sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+    
+    sudo systemctl restart systemd-logind
+
+`systemd-logind` will mess up graphical session, do `sudo reboot`
+
+    
 
 ## Installing nomachine
 
