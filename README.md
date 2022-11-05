@@ -20,6 +20,15 @@ will generate public key in `~/.ssh/id_rsa.pub`
     ssh-copy-id username@remote_host
     
 Will place public key in `~/.ssh/authorized_keys` on server end
+
+Make following change `nano /etc/ssh/sshd_config`
+
+    PubkeyAuthentication yes
+    AuthorizedKeysFile      .ssh/authorized_keys .ssh/authorized_keys2
+    
+then 
+    
+    sudo systemctl restart ssh
     
 ## No sleep
     
