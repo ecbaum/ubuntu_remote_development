@@ -50,3 +50,29 @@ set `HandleLidSwitch=ignore`
     sudo apt -y install wget
     wget https://download.nomachine.com/download/7.10/Linux/nomachine_7.10.1_1_amd64.deb
     sudo apt install -f ./nomachine_7.10.1_1_amd64.deb
+    
+## Setting up FTP on server
+
+    sudo apt update
+    sudo apt install vsftpd ftp ufw -y
+    sudo systemctl enable vsftpd
+    sudo systemctl start vsftpd
+    sudo systemctl status vsftpd
+    ftp localhost
+
+## Cyberduck on client end
+
+Download at https://cyberduck.io/download/
+
+Connect with `SFTP username@remote_host`
+
+
+## Visual studios remote
+
+On server
+
+    sudo snap install code --classic
+
+On client install https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+Press `⌘⇧P` and select *Remote-SSH: Connect to Host...* and enter `username@remote_host`
