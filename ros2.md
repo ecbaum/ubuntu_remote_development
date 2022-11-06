@@ -28,7 +28,6 @@ install ros2
 ### Connect git
 
     git config --global user.email "YOUR_EMAIL" 
-Connect via SSH
 
     cd ~/.ssh 
     ssh-keygen -t rsa -C "YOUR_EMAIL"
