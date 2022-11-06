@@ -1,3 +1,5 @@
+### Install ROS2 
+
 Following https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
 
 Fix langauge 
@@ -22,3 +24,16 @@ install ros2
       sudo apt update
       sudo apt upgrade
       sudo apt install ros-humble-desktop
+
+### Connect git
+
+    git config --global user.email "YOUR_EMAIL" 
+Connect via SSH
+
+    cd ~/.ssh 
+    ssh-keygen -t rsa -C "YOUR_EMAIL"
+    gedit id_rsa.pub 
+    
+Copy content and add in Github Settings
+    
+    ssh-add
