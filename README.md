@@ -93,6 +93,9 @@ Export clients gitconfig to server
 
     scp ~/.gitconfig username@remote_host:~/
     
+Export alias to server
+    
+    scp ~/.zshrc username@remote_host~/.bash_aliases
 ## VS Code remote
 
 On server
