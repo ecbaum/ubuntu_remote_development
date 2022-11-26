@@ -89,6 +89,10 @@ Connect with `SFTP username@remote_host`
     
 Add ssh-key to github
 
+Export clients gitconfig to server
+
+    scp ~/.gitconfig username@remote_host:~/
+    
 ## VS Code remote
 
 On server
