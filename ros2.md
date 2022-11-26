@@ -25,14 +25,4 @@ install ros2
       sudo apt upgrade
       sudo apt install ros-humble-desktop
 
-### Connect git
 
-    git config --global user.email "YOUR_EMAIL" 
-
-    cd ~/.ssh 
-    ssh-keygen -t rsa -C "YOUR_EMAIL"
-    gedit id_rsa.pub 
-    
-Copy content and add in Github Settings
-    
-    ssh-add
