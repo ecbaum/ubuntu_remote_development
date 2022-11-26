@@ -1,5 +1,6 @@
 # ubuntu_server_installation
 
+Ubuntu server setup for remote development and FTP to HDD
 
 ## Enabling ssh
 
@@ -29,8 +30,16 @@ Make following change `nano /etc/ssh/sshd_config`
 then 
     
     sudo systemctl restart ssh
-    
-## No sleep
+ 
+Confirm that Pubkey SSH is working then remove password authentication by adding the line
+
+    PasswordAuthentication no
+
+then
+
+    sudo systemctl restart ssh
+
+## Disable sleep on laptop
     
     sudo -H gedit /etc/systemd/logind.conf
     
@@ -43,13 +52,16 @@ set `HandleLidSwitch=ignore`
 `systemd-logind` will mess up graphical session, do `sudo reboot`
 
     
-
 ## Installing nomachine
 
     sudo apt update
     sudo apt -y install wget
     wget https://download.nomachine.com/download/7.10/Linux/nomachine_7.10.1_1_amd64.deb
     sudo apt install -f ./nomachine_7.10.1_1_amd64.deb
+ 
+ Download for client
+ 
+    https://downloads.nomachine.com/
     
 ## Setting up FTP on server
 
@@ -66,7 +78,7 @@ Download at https://cyberduck.io/download/
 
 Connect with `SFTP username@remote_host`
 
-## Setup Github SSH from server
+## Setup Github SSH on server
     
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
