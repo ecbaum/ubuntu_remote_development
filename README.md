@@ -66,6 +66,15 @@ Download at https://cyberduck.io/download/
 
 Connect with `SFTP username@remote_host`
 
+## Setup Github SSH from server
+    
+    ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    eval $(ssh-agent -s)
+    cat ~/.ssh/id_rsa.pub
+    
+    
+Add ssh-key to github
 
 ## Visual studios remote
 
