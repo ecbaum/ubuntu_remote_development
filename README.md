@@ -89,7 +89,7 @@ Connect with `SFTP username@remote_host`
     
 Add ssh-key to github
 
-## Visual studios remote
+## VS Code remote
 
 On server
 
