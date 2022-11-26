@@ -1,6 +1,6 @@
 # ubuntu_server_installation
 
-Ubuntu server setup for remote development and FTP to HDD
+Ubuntu server setup for remote development and FTP to local HDDs
 
 ## Enabling ssh
 
@@ -80,6 +80,7 @@ Connect with `SFTP username@remote_host`
 
 ## Setup Github SSH on server
     
+    git config --global user.email "your_email@example.com" 
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     eval $(ssh-agent -s)
