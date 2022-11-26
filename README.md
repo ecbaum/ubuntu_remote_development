@@ -1,4 +1,4 @@
-# ubuntu_server_installation
+# ubuntu_remote_development
 
 Ubuntu server setup for remote development and FTP to local HDDs
 
