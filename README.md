@@ -2,7 +2,7 @@
 
 Ubuntu server setup for remote development and FTP to local HDDs
 
-Requirement is a computer with ubuntu installed that is connected to the same LAN as your client computer.
+Requirement is a computer with ubuntu installed that is connected to the same LAN as your client computer. Written for Ubuntu 22.04 but might work for other versions. 
 ## Enabling ssh
 
     sudo apt update
