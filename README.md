@@ -64,6 +64,7 @@ set `HandleLidSwitch=ignore`
     https://downloads.nomachine.com/
     
 ## Setting up FTP on server
+Not necessary for ros development.
 
     sudo apt update
     sudo apt install vsftpd ftp ufw -y
@@ -72,7 +73,7 @@ set `HandleLidSwitch=ignore`
     sudo systemctl status vsftpd
     ftp localhost
 
-## Cyberduck on client end
+### Cyberduck on client end
 
 Download at https://cyberduck.io/download/
 
