@@ -64,7 +64,7 @@ set `HandleLidSwitch=ignore`
     https://downloads.nomachine.com/
     
 ## Setting up FTP on server
-Not necessary for ros development.
+Not necessary for remote development.
 
     sudo apt update
     sudo apt install vsftpd ftp ufw -y
